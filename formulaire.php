@@ -53,14 +53,7 @@ if (isset($_POST['ajout'])) {
                 <label for="mail" class="form-label">Email</label>
                 <input type="email" class="form-control" id="mail" name="email">
             </div>
-<!--            <div class="mb-3 form-check">-->
-<!--                <input type="checkbox" class="form-check-input" id="">-->
-<!--                <label class="form-check-label" for="exampleCheck1" name="sexeH">Homme</label>-->
-<!--            </div>-->
-<!--            <div class="mb-3 form-check">-->
-<!--                <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
-<!--                <label class="form-check-label" for="exampleCheck1" name="sexeF">Femme</label>-->
-<!--            </div>-->
+
             <button type="submit" class="btn btn-primary" name="ajout">Ajouter</button>
     </form>
     <table class="table">
@@ -90,8 +83,8 @@ if (isset($_POST['ajout'])) {
                         <td>'.$row['adresse'].'</td>
                         <td>'.$row['mail'].'</td>
                          <td>
-                            <button class="btn btn-primary"><a href=""class="text-light">Modifier</a></button>
-                            <button class="btn btn-danger"><a href="" class="text-light">Supprimer</a></button>
+                            <button class="btn btn-primary"><a href="" class="text-light">Modifier</a></button>
+                            <button class="btn btn-danger"><a href="supprimer.php?deleteid='.$row['id'].'" class="text-light">Supprimer</a></button>
                         </td>
                      </tr>';
 
